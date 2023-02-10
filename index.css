@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  text-decoration: none;
+  resize: none;
+  word-wrap: break-word;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+html {
+  background-color: #2C2F33;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;
+}
+
+.title{
+  top: 10px;
+  position: absolute;
+  user-select: none;
+  text-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+  padding: 0px;
+  padding-left:20px;
+}
+
+.logo{
+  border-radius: 50%;
+  user-select: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  top: 200px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%);
+}
+
+.about{
+  text-align: center;
+  user-select: none;
+  top: 200px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.about2{
+  text-align: center;
+  overflow: hidden;
+  left: 50%;
+  top: 225px;
+  position: relative;
+  transform: translate(-50%);
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ui{
+  overflow: hidden;
+  line-height: 23px;
+  display: inline-block;
+  margin: 15px;
+  left: 50%;
+  transform: translate(-159%);
+  transition: all 0.25s ease;
+  background: hsl(229deg 9% 35%);
+  user-select: none;
+  top: 370px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+  width: 400px;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.ui:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.uititle{
+  user-select: none;
+  position: relative;
+  width: 100%;
+  height: 25px;
+  text-align: center;
+  padding: 10px;
+  font-weight:bold;
+}
+
+.project{
+  color: rgb(141, 146, 170);
+  user-select: none;
+  top: 475px;
+  left: 50%;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  transform: translate(-488%);
+}
+
+.pjd{
+  opacity: 0.8;
+  user-select: none;
+  top: 525px;
+  left: 50%;
+  position: absolute;
+  font-size: 30px;
+  font-weight: lighter;
+  transform: translate(-121%);
+}
+
+.image{
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.projecttitle{
+  margin: 25px;
+  position: relative;
+  font-size: 25px;
+}
+
+.show{
+  transition: all 0.25s ease;
+  user-select: none;
+  top: 1100px;
+  left: 50%;
+  transform: translate(-335%);
+  position: absolute;
+  width: 185px;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: hsl(229deg 9% 35%);
+  border: 2px solid rgb(143, 148, 160);
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.show:hover{
+  opacity: 0.9;
+}
+
+.shownews{
+  user-select: none;
+  top: 420px;
+  position: relative;
+  width: 185px;
+  height: 35px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: hsl(229deg 9% 35%);
+  border: 2px solid rgb(143, 148, 160);
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.des{
+  margin: 25px;
+}
+
+.line{
+  margin: 25px;
+  bottom: 5px;
+  position: relative;
+}
+
+.date{
+  margin: 25px;
+  bottom: 5px;
+  position: absolute;
+  opacity: 0.5;
+}
+
+.link{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.noembed{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.link:after{
+  display: block;
+  content: '';
+  border-bottom: solid 1px #00aeff;
+  padding-bottom: 1%;
+  transform: scaleX(0);
+  transition: all 0.25s ease;
+}
+
+.link:hover:after{
+  transform: scaleX(1);
+}
+
+
+.navbar{
+  position: relative;
+  margin-right: 10px;
+  user-select: none;
+  display: inline-block;
+}
+
+.navtarbar{
+  user-select: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.news{
+  color: rgb(141, 146, 170);
+  user-select: none;
+  top: -100px;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.news1{
+  left: 50%;
+  cursor: not-allowed;
+  flex: auto;
+  transition: all 0.25s ease;
+  background: hsl(229deg 9% 35%);
+  user-select: none;
+  top: 1300px;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+  width: 1255px;
+  height: 400px;
+  border-radius: 15px;
+  position: absolute;
+  opacity: 0.5;
+  transform: translate(-50%);
+}
+
+.desnews{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.newsdes{
+  cursor: default;
+  opacity: 0.8;
+  user-select: none;
+  top: -50px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.uiall{
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+}
+
+.hide{
+  top: 1725px;
+  position: absolute;
+  opacity: 0;
+  user-select: none;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .ui{
+    left: 50%;
+    transform: translate(-50%);
+    margin: 10px;
+    display: block;
+    overflow: hidden;
+    width: 375px;
+    height: 475px;
+  }
+
+  .about2{
+    max-height: 50px;
+  }
+
+  .project{
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .pjd{
+    left: 50%;
+    transform: translate(-27%);
+    width: 900px;
+    position: absolute;
+  }
+
+  .show{
+    opacity: 0;
+  }
+
+  .news1{
+    position: absolute;
+    top: 2150px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 375px;
+    height: 475px;
+  }
+
+  .shownews{
+    opacity: 0;
+  }
+}
+
+.page{
+  color: white;
+}
+
+ .infoline{
+  background-color: hsl(229deg 9% 35%);
+  opacity: 0.2;
+  left: 50%;
+  transform: translate(-50%);
+  width: 85%;
+  border-radius: 5px;
+  position: relative;
+ }
+
+ .bottom{
+  position: relative;
+  top: 1100px;
+  height: 250px;
+  overflow: auto;
+ }
+
+ .Social{
+  user-select: none;
+  opacity: 0.8;
+  position: absolute;
+  top: 10px;
+  left: 15%;
+ }
+
+ .hover-fx {
+  opacity: 0.9;
+  position: relative;
+  user-select: none;
+  font-size: 2rem;
+  display: block;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  transition: 300ms;
+  }
+
+.bar{
+  position: relative;
+  resize: none;
+  margin-right: 5px;
+  user-select: none;
+  display: inline-block;
+}
+
+.tarbar{
+  user-select: none;
+  position: absolute;
+  left: 15%;
+  top: 40px;
+}
+
+.pcspace{
+  position: relative;
+  left: 33%;
+  top: 10px;
+}
+
+.listtop{
+  position: relative;
+  user-select: none;
+  opacity: 0.8;
+}
+
+.list{
+  opacity: 0.9;
+  user-select: none;
+  position: relative;
+  display: block;
+}
+
+.info{
+  line-height: 35px;
+  user-select: none;
+  opacity: 0.9;
+  position: absolute;
+  right: 15%;
+  top: 120px;
+}
